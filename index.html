@@ -6,21 +6,13 @@
       <title>Louis Thidet</title>
       <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
       <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
+      <link rel="stylesheet" href="assets/css/Montserrat.css">
+      <link rel="stylesheet" href="assets/css/Lato.css">
       <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
       <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
       <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
       <link href="assets/fontawesome/fonts/font-awesome.min.css" rel="stylesheet">
-      <style>
-         /* Custom styles for the social icons */
-         .btn-social-blanc i {
-         color: black; /* Set the default icon color */
-         }
-         .btn-social-blanc:hover i {
-         color: white; /* Set the icon color on hover */
-         }
-      </style>
+      <link rel="stylesheet" href="assets/css/styles.css">
    </head>
    <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
       <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
@@ -28,8 +20,6 @@
             <a class="navbar-brand" href="#page-top">Louis Thidet</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                <ul class="navbar-nav ms-auto">
-                  
-                  
                   <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Projets</a></li>
                   <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#CV">CV</a></li>
                   <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
@@ -69,101 +59,194 @@
             <h2 class="text-uppercase text-center text-secondary">Projets</h2>
             <hr class="star-dark mb-5">
             <div class="row">
-               <div class="col-md-6 col-lg-4">
-                  <a class="d-block mx-auto portfolio-item" href="#dashboard" data-bs-toggle="modal">
-                     <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+               <div class="accordion" id="portfolioAccordion">
+                  <!-- Internet of Things -->
+                  <div>
+                     <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="border: 1px solid #ddd; border-radius: .25rem; font-weight: bold !important">
+                        Internet des objets
+                        </button>
+                     </h2>
+                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                        <div>
+                           <div class="row mt-lg-4 mt-md-3 mt-3">
+                              <!-- Bomnet -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#bomnet" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/bomnet.png">
+                                 </a>
+                              </div>
+                              <!-- Dashboard -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#dashboard" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/dashboard.png">
+                                 </a>
+                              </div>
+                              <!-- Thermometer -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#thermometer" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/thermometer.png">
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                     <img class="img-fluid" src="assets/img/portfolio/dashboard.png">
-                  </a>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                  <a class="d-block mx-auto portfolio-item" href="#thermometer" data-bs-toggle="modal">
-                     <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                  </div>
+                  <!-- Data Analysis -->
+                  <div>
+                     <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="border: 1px solid #ddd; border-radius: .25rem; font-weight: bold !important">
+                        Analyse de données
+                        </button>
+                     </h2>
+                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                        <div>
+                           <div class="row mt-lg-4 mt-md-3 mt-3">
+                              <!-- Ridership -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#ridership" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/ridership.png">
+                                 </a>
+                              </div>
+                              <!-- Grand Paris -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#grand_paris" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/grand_paris.png">
+                                 </a>
+                              </div>
+                              <!-- Creteil -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#creteil" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/creteil.png">
+                                 </a>
+                              </div>
+                              <!-- Csviewer -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#csviewer" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/csviewer.png">
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                     <img class="img-fluid" src="assets/img/portfolio/thermometer.png">
-                  </a>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                  <a class="d-block mx-auto portfolio-item" href="#assistant_vocal" data-bs-toggle="modal">
-                     <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                  </div>
+                  <!-- Web -->
+                  <div>
+                     <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="border: 1px solid #ddd; border-radius: .25rem; font-weight: bold !important">
+                        Web
+                        </button>
+                     </h2>
+                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                        <div>
+                           <div class="row mt-lg-4 mt-md-3 mt-3">
+                              <!-- Gustave Eiffel -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#gustave" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/gustave.png">
+                                 </a>
+                              </div>
+                              <!-- Bookshop -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#librairie" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/librairie.png">
+                                 </a>
+                              </div>
+                              <!-- Forum -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#forum" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/forum.png">
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                     <img class="img-fluid" src="assets/img/portfolio/assistant_vocal.png">
-                  </a>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                  <a class="d-block mx-auto portfolio-item" href="#gustave" data-bs-toggle="modal">
-                     <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                  </div>
+                  <!-- Mobile -->
+                  <div>
+                     <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="border: 1px solid #ddd; border-radius: .25rem; font-weight: bold !important">
+                        Mobile
+                        </button>
+                     </h2>
+                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                        <div>
+                           <div class="row mt-lg-4 mt-md-3 mt-3">
+                              <!-- Vocal assistant -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#assistant_vocal" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/assistant_vocal.png">
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                     <img class="img-fluid" src="assets/img/portfolio/gustave.png">
-                  </a>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                  <a class="d-block mx-auto portfolio-item" href="#ridership" data-bs-toggle="modal">
-                     <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                  </div>
+                  <!-- Miscellaneous -->
+                  <div>
+                     <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="border: 1px solid #ddd; border-radius: .25rem; font-weight: bold !important">
+                        Divers
+                        </button>
+                     </h2>
+                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                        <div>
+                           <div class="row mt-lg-4 mt-md-3 mt-3">
+                              <!-- Versus -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#versus" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/versus.png">
+                                 </a>
+                              </div>
+                              <!-- Theater -->
+                              <div class="col-md-6 col-lg-4">
+                                 <a class="d-block mx-auto portfolio-item" href="#theatre" data-bs-toggle="modal">
+                                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                                       <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/theatre.png">
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                     <img class="img-fluid" src="assets/img/portfolio/ridership.png">
-                  </a>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                  <a class="d-block mx-auto portfolio-item" href="#librairie" data-bs-toggle="modal">
-                     <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                     </div>
-                     <img class="img-fluid" src="assets/img/portfolio/librairie.png">
-                  </a>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                  <a class="d-block mx-auto portfolio-item" href="#theatre" data-bs-toggle="modal">
-                     <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                     </div>
-                     <img class="img-fluid" src="assets/img/portfolio/theatre.png">
-                  </a>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                  <a class="d-block mx-auto portfolio-item" href="#csviewer" data-bs-toggle="modal">
-                     <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                     </div>
-                     <img class="img-fluid" src="assets/img/portfolio/csviewer.png">
-                  </a>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                  <a class="d-block mx-auto portfolio-item" href="#forum" data-bs-toggle="modal">
-                     <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                     </div>
-                     <img class="img-fluid" src="assets/img/portfolio/forum.png">
-                  </a>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                  <a class="d-block mx-auto portfolio-item" href="#versus" data-bs-toggle="modal">
-                     <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                     </div>
-                     <img class="img-fluid" src="assets/img/portfolio/versus.png">
-                  </a>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                  <a class="d-block mx-auto portfolio-item" href="#grand_paris" data-bs-toggle="modal">
-                     <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                     </div>
-                     <img class="img-fluid" src="assets/img/portfolio/grand_paris.png">
-                  </a>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                  <a class="d-block mx-auto portfolio-item" href="#creteil" data-bs-toggle="modal">
-                     <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                     </div>
-                     <img class="img-fluid" src="assets/img/portfolio/creteil.png">
-                  </a>
+                  </div>
                </div>
             </div>
          </div>
@@ -292,7 +375,7 @@
          </div>
       </footer>
       <div class="text-center text-white copyright py-4">
-         <div class="container"><small>&nbsp;Louis Thidet - 2023</small></div>
+         <div class="container"><small>&nbsp;Louis Thidet - 2024</small></div>
       </div>
       <div class="scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
       <div class="modal text-center" role="dialog" tabindex="-1" id="versus">
@@ -326,6 +409,44 @@
                   </div>
                </div>
                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Fermer</a></div>
+            </div>
+         </div>
+      </div>
+      <div class="modal text-center" role="dialog" tabindex="-1" id="bomnet">
+         <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+               <div class="modal-body">
+                  <div class="container text-center">
+                     <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                           <h2 class="text-uppercase text-secondary mb-0">Plugin BOMNET pour OMNeT++</h2>
+                           <hr class="star-dark mb-5">
+                           <img class="img-fluid mb-5 border" src="assets/img/portfolio/bomnet1.png">
+                           <p class="mb-4">
+                              BOMNET est un plug-in open-source gratuit conçu pour OMNeT++ et INET, qui exploite la puissance des données de modélisation des informations du bâtiment (BIM). 
+                              En intégrant les fichiers IFC (Industry Foundation Classes), BOMNET génère automatiquement les environnements 3D avec les propriétés des matériaux associés. 
+                              <br><a href="https://bomnet.github.io/" target="_blank">Site internet de BOMNET</a>
+                           </p>
+                           <div>
+                              <ul class="list-inline">
+                                 <li class="list-inline-item">
+                                    <a class="btn btn-outline-dark text-center btn-social btn-social-blanc" href="https://github.com/bomnet/bomnet.github.io/archive/refs/heads/master.zip">
+                                    <i class="fa-solid fa-download"></i>
+                                    </a>
+                                 </li>
+                                 <li class="list-inline-item">
+                                    <a class="btn btn-outline-dark text-center btn-social btn-social-blanc" target="_blank" href="https://bomnet.github.io/">
+                                    <i class="fab fa-github fa-fw"></i>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close</a></div>
             </div>
          </div>
       </div>

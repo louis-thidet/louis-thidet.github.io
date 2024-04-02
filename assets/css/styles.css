@@ -1,0 +1,34 @@
+.portfolio-item-caption {
+    background: rgba(0, 0, 0, 0.75);
+    transition: all ease 0.4s;
+    opacity: 0;
+  }
+  .portfolio-item:hover .portfolio-item-caption {
+    opacity: 1;
+  }
+  /* Remove padding from the accordion body */
+  .no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Adjust the first item to align with the accordion's edge */
+  .portfolio-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .portfolio-row > [class*='col-']:first-child {
+    padding-left: 0;
+  }
+  
+  .accordion-collapse.show .content-spacing {
+    margin-top: 15px; /* Ajustez cette valeur selon l'espace désiré */
+  }
+  
+
+/* Custom styles for the social icons */
+.btn-social-blanc i {
+    color: black;
+}
+.btn-social-blanc:hover i {
+    color: white;
+}
