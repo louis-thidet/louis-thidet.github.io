@@ -12,8 +12,9 @@
   background: linear-gradient(90deg, rgba(67, 91, 104, 0.582) 0%, rgba(102, 110, 114, 0.9) 100%);
 }
 .footer-background {
-  background-image: url('../img/test.jpg');
-  background-size: 200% ;
+  background-image: url('../img/1280px-Auguste_Renoir_-_Pont_Neuf,_Paris_-_Google_Art_Project.jpg');
+  background-size: cover;
+  background-position: center;
 }
 .custom-police {
   font-family: 'Rubik', sans-serif;
